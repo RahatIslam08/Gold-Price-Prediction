@@ -1,0 +1,94 @@
+/* Background */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e8eef5, #dce6f1);
+  font-family: "Inter", sans-serif;
+}
+
+/* Yellow Header */
+.top-header {
+  background: #e3b71a;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+}
+
+.btn.blue {
+  background: #0d6efd;
+}
+.btn.yellow {
+  background: #e0a800;
+}
+.btn.green {
+  background: #218838;
+}
+
+/* Main Card */
+.card {
+  width: 55%;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  border-top: 6px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #007bff, #00c6ff, #ff5f6d, #ffc371);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background: #4a8dd8;
+  margin: 10px auto 30px;
+  border-radius: 3px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.menu-item {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #444;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.menu-item:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}

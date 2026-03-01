@@ -1,5 +1,3 @@
-﻿# Gold-Price-Prediction
-
 # Gold Price Prediction
 
 This project is a full-stack **Gold Price Prediction System** that uses **Machine Learning** to predict gold prices based on historical data and provides a **web-based interface** for users to view predictions.
@@ -119,3 +117,4 @@ http://localhost:5000
 
 Md. Tariqul Islam
 Full-Stack Developer | Machine Learning Enthusiast
+

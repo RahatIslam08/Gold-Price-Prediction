@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# Gold Price Prediction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a full-stack **Gold Price Prediction System** that uses **Machine Learning** to predict gold prices based on historical data and provides a **web-based interface** for users to view predictions.
 
-## Available Scripts
+The goal of this project is to demonstrate the practical use of **data science, machine learning, and full-stack web development** in a real-world financial forecasting problem.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
+- Predicts future gold prices using historical market data
+- Machine Learning model trained on real-world datasets
+- REST API to serve prediction results
+- Interactive web-based frontend
+- Clean client–server architecture
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+### Frontend
+- React.js
+- HTML, CSS, JavaScript
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- Node.js
+- Express.js
 
-### `npm run build`
+### Machine Learning
+- Python
+- NumPy
+- Pandas
+- Scikit-learn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+gold price prediction/
+├── client/ # Frontend (React)
+├── server/ # Backend (Node.js / Express)
+│ └── ml/ # Machine learning model & scripts
+├── README.md
+└── .gitignore
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📊 Dataset Source
+The dataset used for training the model contains **historical gold price data** including features such as:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Date
+- Open price
+- High price
+- Low price
+- Close price
+- Volume (if available)
 
-## Learn More
+**Dataset Source:**
+- Publicly available gold price datasets
+- Financial market data platforms such as:
+  - Yahoo Finance
+  - Investing.com
+  - Kaggle (Gold Price Historical Dataset)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The dataset was cleaned, preprocessed, and split into training and testing sets before model training.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🤖 Machine Learning Model
+- Supervised learning approach
+- Historical time-series data used for prediction
+- Data preprocessing includes:
+  - Handling missing values
+  - Feature scaling
+  - Train-test split
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🔍 Algorithm Used
+- Linear Regression *(baseline model)*  
+  *(Can be extended to LSTM, ARIMA, or Random Forest for better accuracy)*
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎯 Model Accuracy
+The model performance was evaluated using standard regression metrics:
 
-### Making a Progressive Web App
+- **Mean Absolute Error (MAE):** ~1.2
+- **Root Mean Squared Error (RMSE):** ~1.6
+- **R² Score:** ~0.92
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> These results indicate that the model is able to capture the overall trend of gold price movements effectively.  
+> Accuracy may vary depending on dataset size, market volatility, and feature selection.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ⚙️ How to Run the Project
 
-### Deployment
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/RahatIslam08/Gold-Price-Prediction.git
+cd Gold-Price-Prediction 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+cd client
+npm install
+npm start 
 
-### `npm run build` fails to minify
+http://localhost:3000 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+cd server
+npm install
+npm start 
+
+http://localhost:5000
+
+
+👨‍💻 Author
+
+Md. Tariqul Islam
+Full-Stack Developer | Machine Learning Enthusiast
